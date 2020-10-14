@@ -25,7 +25,7 @@ public class NumberCounter {
            num = input.nextInt();
          } while (num != 0);
 
-         double avr = sum / (positive+negative+1);
+         double avr = sum / (positive+negative);
 
          System.out.println("Positive numbers: " + positive);
          System.out.println("Negative numbers: " + negative);
