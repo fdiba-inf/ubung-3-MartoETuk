@@ -7,11 +7,8 @@ public class Triangle {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
 
-    System.out.print("Enter value for a: ");
     double a = input.nextDouble();
-    System.out.print("Enter value for b: ");
     double b = input.nextDouble();
-    System.out.print("Enter value for c: ");
     double c = input.nextDouble();
 
     do {
@@ -19,18 +16,18 @@ public class Triangle {
       if (a>0 && b>0 && c>0 && a<(b+c) && b<(a+c) && c<(b+a)) {
         double s = (a+b+c)/2;
         double area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
-        System.out.println("Area: " + area);
+        String type;
 
         if (a == b && b == c) {
-          String type = "equilateral";
-          System.out.println("Triangle: " + type);
+          type = "equilateral";
         } else if (a != b && b != c && c != a) {
-          String type = "scalene";
-          System.out.println("Triangle: " + type);
+          type = "scalene";
         } else {
-          String type = "isosceles";
-          System.out.println("Triangle: " + type);
+          type = "isosceles";
         }
+
+        System.out.println("Area: " + area);
+        System.out.println("Triangle: " + type);
       } else {
         System.out.println("Values are not correct!");
       } 

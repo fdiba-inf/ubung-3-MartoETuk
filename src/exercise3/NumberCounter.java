@@ -9,8 +9,7 @@ public class NumberCounter {
 
         int positive = 0;
         int negative = 0;
-        int sum = 0;
-        System.out.print("Еnter a number: ");
+        double sum = 0;
         int num = input.nextInt();
 
         while (num != 0) {
