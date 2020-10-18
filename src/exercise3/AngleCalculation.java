@@ -7,7 +7,9 @@ public class AngleCalculation {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
 
+    System.out.print("Enter the size of the angle: ");
     double angle = input.nextInt();
+    System.out.print("Enter the unit: ");
     char einheit = input.next().charAt(0);
 
     do {

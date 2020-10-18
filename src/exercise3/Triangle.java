@@ -7,10 +7,12 @@ public class Triangle {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
 
+    System.out.print("Enter value for a: ");
     double a = input.nextDouble();
+    System.out.print("Enter value for b: ");
     double b = input.nextDouble();
+    System.out.print("Enter value for c: ");
     double c = input.nextDouble();
-    String type;
 
     do {
       
@@ -20,13 +22,13 @@ public class Triangle {
         System.out.println("Area: " + area);
 
         if (a == b && b == c) {
-          type = "equilateral";
+          String type = "equilateral";
           System.out.println("Triangle: " + type);
         } else if (a != b && b != c && c != a) {
-          type = "scalene";
+          String type = "scalene";
           System.out.println("Triangle: " + type);
         } else {
-          type = "isosceles";
+          String type = "isosceles";
           System.out.println("Triangle: " + type);
         }
       } else {

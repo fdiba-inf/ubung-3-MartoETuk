@@ -22,7 +22,6 @@ public class NumberCounter {
             }
 
             sum+=num;
-            System.out.print("Enter a number: ");
             num = input.nextInt();
         }
 
